@@ -1,0 +1,500 @@
+/* 
+===============================
+    Home Page Styles
+===============================
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('home1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    padding: 14rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+}
+
+.hero-content {
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: var(--white);
+    margin-bottom: 2rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.hero-buttons .btn {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.6rem;
+    border-radius: var(--border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Forms */
+form {
+    margin-top: 2.4rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+.form-group {
+    margin-bottom: 1.6rem;
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--gray-light);
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 12rem;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+}
+
+.checkbox-group input {
+    width: auto;
+    margin-right: 1rem;
+    margin-top: 0.4rem;
+}
+
+.checkbox-group label {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.form-submit {
+    margin-top: 2.4rem;
+}
+
+/* We are Apollo */
+.apollo-section {
+    padding: 6rem 2rem;
+    color: #000;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.626);
+    font-family: 'Poppins', sans-serif;
+    background-image: url('s1_2.jpg'); /* Ensure the image path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apollo-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.608); /* Slightly lighter dimming for better readability */
+    z-index: 1;
+}
+
+.apollo-section .container {
+    position: relative;
+    z-index: 2;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.apollo-title {
+    font-size: 4.8rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 3rem;
+}
+
+.apollo-title span {
+    color: var(--primary-dark); /* Use primary-dark for consistency */
+}
+
+.apollo-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.stat-block {
+    text-align: center;
+}
+
+.stat-block h3 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--primary-dark); /* Use primary color for emphasis */
+    margin-bottom: 0.5rem;
+}
+
+.stat-block p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: bold;
+    color: var(--gray-dark); /* Use gray-dark for better contrast */
+}
+
+.divider {
+    width: 2px;
+    height: 70px;
+    background-color: var(--secondary); /* Use secondary color for visual consistency */
+}
+
+.apollo-summary {
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--gray-dark); /* Use gray-dark for base text */
+    line-height: 1.7;
+}
+
+.apollo-summary span {
+    color: var(--primary-dark); /* Highlight spans with primary-dark */
+    font-size: 4.2rem; /* Slightly larger font size for emphasis */
+    font-weight: 700;
+    background-color: var(--primary-light); /* Add background highlight */
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--border-radius); /* Rounded edges for better design */
+}
+
+   
+/* CTA Sections */
+.enquiry-cta {
+    background-color: var(--primary-light);
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    margin-bottom: 1.6rem;
+}
+
+.cta-content p {
+    margin-bottom: 2.4rem;
+    font-size: 1.8rem;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+/* Featured Programs */
+.featured-programs {
+    padding: 8rem 0;
+    background-color: var(--gray-lightest);
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0OSLTSPqbeeu5UyjJQBNx03RCXw1UFUmm-A&s");
+    background-position: center;
+    background-size: cover;
+    color: var(--black);
+    overflow: hidden; /* Ensure no overflow during sliding */
+    position: relative;
+}
+
+.featured-programs h2 {
+    text-align: center;
+    margin: 0 auto; /* Centers the box horizontally */
+    border: 2px solid var(--primary);
+    display: inline-block; /* Adapts to the text length */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 0.5rem 1rem; /* Adds some padding for better appearance */
+    position: absolute; /* Allows precise positioning */
+    left: 50%; /* Horizontally centers the box */
+    transform: translate(-50%, -50%); /* Adjusts for the box's dimensions */
+    z-index: 1; /* Ensures the title is above other elements */
+}
+
+.featured-programs p {
+    text-align: center;
+    margin-top: 2rem; /* Adjusted spacing for proper placement */
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    position: relative; /* Allows for absolute positioning of child elements */
+}
+
+
+.program-cards {
+    display: flex;
+    gap: 2rem;
+    animation: slide-left 30s linear infinite; /* Smooth auto-scrolling */
+}
+
+.program-card {
+    min-width: 20rem; /* Smaller card size */
+    max-width: 25rem; /* Prevent cards from growing too large */
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.program-card img {
+    width: 100%;
+    height: 15rem; /* Adjusted height for smaller cards */
+    object-fit: cover;
+}
+
+.program-card h3 {
+    padding: 1.2rem 1.2rem 0.6rem;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.program-card p {
+    padding: 0 1.2rem 1.2rem;
+    color: var(--gray);
+    text-align: left;
+}
+
+.program-card .btn {
+    margin: 0 1.2rem 1.2rem;
+}
+
+.view-all {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+/* Auto-scrolling animation */
+@keyframes slide-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Ensure seamless looping */
+.program-cards {
+    display: flex;
+    gap: 2rem;
+    animation: slide-left 30s linear infinite; /* Smooth auto-scrolling */
+    will-change: transform; /* Optimize performance */
+}
+
+.program-cards::after {
+    content: '';
+    flex: 0 0 auto;
+    width: calc(100% + 2rem); /* Adjust to match the gap */
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) {
+    .program-cards {
+        flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .program-cards {
+        flex-wrap: nowrap;
+    }
+
+    .program-card {
+        min-width: 20rem; /* Smaller card size */
+        max-width: 25rem; /* Prevent cards from growing too large */
+        flex-shrink: 0; /* Prevent shrinking */
+        margin-bottom: 2rem; /* Space between cards */
+    }
+}
+
+/* Our Centres */
+.our-centres {
+    padding: 8rem 0;
+    background-color: var(--primary-light);
+}
+
+.our-centres h2 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    text-decoration-color: var(--yellow);
+    color: var(--yellow);
+}
+
+.centre-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    gap: 3.2rem;
+}
+
+.centre-card {
+    background-color: var(--white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--gray-light);
+    transition: var(--transition);
+}
+
+.centre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.centre-card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.centre-card h3 {
+    padding: 1.6rem 1.6rem 0.8rem;
+    font-size: 2rem;
+}
+
+.centre-card p {
+    padding: 0 1.6rem 1.6rem;
+    color: var(--gray);
+}
+
+.centre-card .btn {
+    margin: 0 1.6rem 1.6rem;
+}
+
+/* Quick Enquiry */
+.quick-enquiry {
+    padding: 8rem 0;
+    background-color: var(--gray-lightest);
+}
+
+.quick-enquiry h2 {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.quick-enquiry > .container > p {
+    text-align: center;
+    max-width: 60rem;
+    margin: 0 auto 4rem;
+}
+
+.enquiry-form {
+    max-width: 80rem;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 3.2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+
+/* Responsive Styles for Home Page */
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 8rem 0;
+    }
+    
+    .hero h1 {
+        font-size: 3.6rem;
+    }
+    
+    .hero p {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .featured-programs, .our-centres, .quick-enquiry {
+        padding: 6rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .program-cards, .centre-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .enquiry-form {
+        padding: 2.4rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+}

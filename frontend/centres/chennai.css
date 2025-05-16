@@ -1,0 +1,261 @@
+/* Chennai.css - Premium Version */
+/* ==============================
+    Modern CSS Reset
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* ==============================
+  CSS Variables
+============================== */
+:root {
+  --primary: #00A0B0;
+  --primary-dark: #007A85;
+  --primary-light: #B3E0E5;
+  --secondary: #F57F17;
+  --secondary-dark: #BC5100;
+  --secondary-light: #FFAD42;
+  --accent: #6A1B9A;
+  --gray-dark: #333333;
+  --gray: #666666;
+  --gray-light: #CCCCCC;
+  --gray-lightest: #F5F5F5;
+  --white: #FFFFFF;
+  --black: #000000;
+  --success: #4CAF50;
+  --warning: #FF9800;
+  --error: #F44336;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --border-radius: 4px;
+  --transition: all 0.3s ease;
+  --font-heading: 'Arial', sans-serif;
+  --font-body: 'Arial', sans-serif;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styles */
+
+/* Ensure header is not affected by global resets */
+header * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Header Scaling */
+@media screen and (max-width: 768px) {
+  header {
+      font-size: 1.2rem; /* Adjust for smaller screens */
+      padding: 15px;
+  }
+}
+
+/* Program Hero Section */
+.page-hero {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/premium-photo/road-passing-through-city-against-sky_1048944-30434419.jpg?w=1060') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  text-align: center;
+  padding: 0 2rem;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.page-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.page-hero p {
+  font-size: 1.8rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  line-height: 1.6;
+}
+
+/* === Section Styling === */
+.section {
+  padding: 100px 50px; /* Increased padding */
+  background-color: #ffffff;
+  transition: background 0.3s ease-in-out;
+}
+
+.section:nth-child(even) {
+  background-color: #f9fbfd;
+}
+
+/* ==============================
+  Highlights Grid
+============================== */
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+  position: relative;
+}
+
+.highlight-grid div {
+  background: white;
+  padding: 30px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.highlight-grid div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-grid i {
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 15px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ==============================
+  Facilities List
+============================== */
+.facility-list {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.facility-list li {
+  padding: 20px;
+  background: white;
+  margin-bottom: 15px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.facility-list li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.facility-list li::before {
+  content: '✓';
+  color: var(--accent);
+  margin-right: 15px;
+  font-size: 1.2rem;
+}
+
+/* ==============================
+  Testimonials
+============================== */
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1200px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  position: relative;
+  transition: var(--transition);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 4rem;
+  color: var(--accent);
+  opacity: 0.5;
+}
+
+.testimonial-card p {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ==============================
+  Animations
+============================== */
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.section h2 {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  margin-bottom: 30px;
+}
